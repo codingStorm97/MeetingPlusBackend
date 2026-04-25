@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="2.11.1" />
+    <PackageReference Include="Mapster" Version="10.0.7" />
+    <PackageReference Include="MediatR" Version="14.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AiTodoApp.Application\AiTodoApp.Application.csproj" />
+    <ProjectReference Include="..\AiTodoApp.Infrastructure\AiTodoApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\AiTodoApp.Messaging\AiTodoApp.Messaging.csproj" />
+    <ProjectReference Include="..\AiTodoApp.Messaging.Contracts\AiTodoApp.Messaging.Contracts.csproj" />
+    <ProjectReference Include="..\AiTodoApp.VectorDB\AiTodoApp.VectorDB.csproj" />
+    <ProjectReference Include="..\AiTodoApp.Agent\AiTodoApp.Agent.csproj" />
+  </ItemGroup>
+
+</Project>

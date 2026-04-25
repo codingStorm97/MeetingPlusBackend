@@ -1,0 +1,14 @@
+<Solution>
+  <Project Path="AiTodoApp.Agent/AiTodoApp.Agent.csproj" />
+  <Project Path="AiTodoApp.Api/AiTodoApp.Api.csproj" />
+  <Project Path="AiTodoApp.Application/AiTodoApp.Application.csproj" />
+  <Project Path="AiTodoApp.Domain/AiTodoApp.Domain.csproj" />
+  <Project Path="AiTodoApp.Infrastructure/AiTodoApp.Infrastructure.csproj" />
+  <Project Path="AiTodoApp.Messaging.Contracts/AiTodoApp.Messaging.Contracts.csproj" />
+  <Project Path="AiTodoApp.Messaging/AiTodoApp.Messaging.csproj" />
+  <Project Path="AiTodoApp.VectorDB/AiTodoApp.VectorDB.csproj" />
+  <Project Path="AiTodoApp.HuggingFaceMcp/AiTodoApp.HuggingFaceMcp.csproj" />
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>

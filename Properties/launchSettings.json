@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "docker-compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "sqlserver": "StartWithoutDebugging",
+        "meetingsplus-api": "StartDebugging",
+        "meetingsplus-web": "StartWithoutDebugging"
+      },
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:3000"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "AiTodoApp.Api\\AiTodoApp.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "AiTodoApp.Messaging\\AiTodoApp.Messaging.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "AiTodoApp.VectorDB\\AiTodoApp.VectorDB.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "meetingsplus-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "app:start": "npm --prefix meetingsplus-web run dev -- --host 0.0.0.0 --port 3000",
+    "app:full": "node scripts/app-start.js",
+    "app start": "npm run app:start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

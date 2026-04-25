@@ -1,0 +1,225 @@
+----------------------------------------
+MEETING TRANSCRIPT LOG – ANUBHAV
+----------------------------------------
+
+[2026-04-10 | 09:02 AM] Meeting Started: Product Sync
+
+Anubhav: Good morning everyone, let's get started. We have quite a few things to cover.
+Riya: Morning! Yes, especially the dashboard release.
+Rahul: Morning, quick note — API latency is still high.
+Anubhav: Okay, Rahul can you investigate that?
+Rahul: Yes, I’ll check logs around 11:30 AM.
+Anubhav: Please share RCA by 3 PM today.
+Riya: Also UI is pending review.
+Anubhav: Let's do UI review at 2 PM.
+
+[Action Items]
+- Rahul to investigate API latency at 11:30 AM
+- Rahul to provide RCA by 3:00 PM
+- UI Review scheduled at 2:00 PM
+
+----------------------------------------
+
+[2026-04-10 | 11:05 AM] Client Discussion
+
+Client: We want calendar integration soon.
+Anubhav: Yes, we are planning Google Calendar integration.
+Client: Will reminders be supported?
+Anubhav: Yes, reminders and scheduling both.
+
+[Action Items]
+- Anubhav to prepare calendar integration design doc by 2026-04-11 10:00 AM
+
+----------------------------------------
+
+[2026-04-10 | 11:32 AM] Debug Session
+
+Rahul: Logs show DB connection pool exhaustion.
+Anubhav: Try increasing max pool size.
+Rahul: Will test and update by 1 PM.
+
+[Action Items]
+- Rahul to test DB configuration by 1:00 PM
+
+----------------------------------------
+
+[2026-04-10 | 02:01 PM] UI Review
+
+Riya: This is the dashboard layout.
+Anubhav: Looks good but spacing needs improvement.
+Riya: Will fix by tomorrow.
+Anubhav: Also add filters for date range.
+
+[Action Items]
+- Riya to fix UI spacing by 2026-04-11
+- Riya to add date filter feature
+
+----------------------------------------
+
+[2026-04-10 | 04:15 PM] Internal Planning
+
+Anubhav: We need better logging.
+Rahul: Agree, current logs are insufficient.
+Anubhav: Let’s schedule logging improvement work tomorrow 10 AM.
+
+[Action Items]
+- Team meeting scheduled 2026-04-11 10:00 AM
+
+----------------------------------------
+
+[2026-04-11 | 09:05 AM] Daily Standup
+
+Anubhav: Updates everyone?
+Rahul: Latency issue fixed.
+Riya: UI fixes in progress.
+Anubhav: Good, let's plan next sprint.
+
+----------------------------------------
+
+[2026-04-11 | 10:00 AM] Logging Improvements Meeting
+
+Rahul: Suggest structured logging.
+Anubhav: Yes, implement correlation IDs.
+Riya: Will impact UI logs?
+Rahul: No, backend only.
+
+[Action Items]
+- Rahul to implement structured logging by 2026-04-12
+- Rahul to add correlation IDs
+
+----------------------------------------
+
+[2026-04-11 | 01:00 PM] Product Brainstorm
+
+Anubhav: We should add AI-based task extraction.
+Riya: From meeting transcripts?
+Anubhav: Yes exactly.
+Rahul: That will need vector DB.
+Anubhav: Let's explore Qdrant.
+
+[Action Items]
+- Anubhav to research vector DB options by 2026-04-12
+- Rahul to evaluate Qdrant setup
+
+----------------------------------------
+
+[2026-04-11 | 03:30 PM] Follow-up Discussion
+
+Client: Any update on calendar integration?
+Anubhav: Design is ready, implementation starts tomorrow.
+
+[Action Items]
+- Rahul to start calendar API integration on 2026-04-12
+- Anubhav to review implementation by 2026-04-13
+
+----------------------------------------
+
+[2026-04-12 | 09:10 AM] Daily Standup
+
+Rahul: Starting calendar integration today.
+Riya: UI dashboard almost done.
+Anubhav: Good progress.
+
+----------------------------------------
+
+[2026-04-12 | 11:45 AM] Calendar Integration
+
+Rahul: Authentication flow is tricky.
+Anubhav: Use OAuth properly.
+Rahul: Will complete initial integration by 5 PM.
+
+[Action Items]
+- Rahul to complete OAuth integration by 5:00 PM
+
+----------------------------------------
+
+[2026-04-12 | 02:15 PM] Feature Discussion
+
+Riya: Should we allow manual task creation?
+Anubhav: Yes, both manual and AI-generated.
+Rahul: Need DB schema update.
+Anubhav: Do it today.
+
+[Action Items]
+- Rahul to update DB schema by end of day
+- Riya to add UI for manual task entry
+
+----------------------------------------
+
+[2026-04-12 | 04:45 PM] Wrap-up
+
+Anubhav: Let’s track pending tasks.
+Rahul: Calendar integration in progress.
+Riya: UI done except filters.
+Anubhav: Tomorrow we focus on AI extraction.
+
+----------------------------------------
+
+[2026-04-13 | 09:00 AM] AI Planning Meeting
+
+Anubhav: We will upload meeting text and extract tasks.
+Rahul: Using embeddings?
+Anubhav: Yes, vector search + agents.
+Riya: UI will show extracted tasks.
+Anubhav: Perfect.
+
+[Action Items]
+- Rahul to implement embedding pipeline
+- Anubhav to design agent workflow
+- Riya to create dashboard view for tasks
+
+----------------------------------------
+
+[2026-04-13 | 12:30 PM] Technical Discussion
+
+Rahul: Which model for embeddings?
+Anubhav: Use OpenAI embeddings for now.
+Rahul: Storage in Qdrant?
+Anubhav: Yes.
+
+[Action Items]
+- Rahul to integrate embedding API
+- Rahul to push vectors to Qdrant
+
+----------------------------------------
+
+[2026-04-13 | 03:00 PM] Review Call
+
+Client: This is looking good.
+Anubhav: We will demo AI extraction tomorrow.
+
+[Action Items]
+- Anubhav to prepare demo by 2026-04-14 11:00 AM
+
+----------------------------------------
+
+[2026-04-14 | 11:05 AM] Demo Meeting
+
+Anubhav: Uploading meeting transcript.
+System: Extracted 12 tasks.
+Client: That’s impressive.
+
+----------------------------------------
+
+[2026-04-14 | 02:20 PM] Feedback Session
+
+Client: Add priority classification.
+Anubhav: Good idea.
+Rahul: Will require model tweak.
+
+[Action Items]
+- Rahul to add priority tagging
+- Riya to update UI for priority labels
+
+----------------------------------------
+
+[2026-04-14 | 05:10 PM] End of Day Sync
+
+Anubhav: Great work everyone.
+Riya: UI updates tomorrow.
+Rahul: Backend enhancements ongoing.
+
+----------------------------------------
+
+END OF TRANSCRIPT
+----------------------------------------
